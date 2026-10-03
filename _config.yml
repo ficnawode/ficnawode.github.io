@@ -1,0 +1,20 @@
+title: Tobiasz
+description: One man's feature is another man's bug.
+url: "https://ficnawode.github.io"
+baseurl: ""
+author: Tobiasz Fic
+
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

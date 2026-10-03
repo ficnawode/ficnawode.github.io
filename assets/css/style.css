@@ -1,0 +1,220 @@
+:root {
+  --bg: #fbf8f3;
+  --fg: #37332d;
+  --muted: #968d80;
+  --accent: #5f7d95;
+  --border: #e7e0d5;
+  --code-bg: #f2ece2;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  font-size: 19px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Literata", Georgia, "Iowan Old Style", "Times New Roman", serif;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Header */
+.site-header {
+  text-align: center;
+  padding: 3.5rem 1.25rem 1.5rem;
+}
+
+.site-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.site-title:hover { color: var(--accent); }
+
+.content {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem 1.4rem 4rem;
+}
+
+/* Links */
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: rgba(95, 125, 149, 0.35);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover { text-decoration-color: var(--accent); }
+
+/* Headings */
+h1, h2, h3 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+h1 { font-size: 2.1rem; margin: 0 0 1.2rem; }
+h2 { font-size: 1.55rem; margin: 2.75rem 0 0.75rem; }
+h3 { font-size: 1.2rem; margin: 1.75rem 0 0.4rem; }
+
+p { margin: 0 0 1.1rem; }
+
+.content > p,
+.post-body p {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+.muted { color: var(--muted); }
+
+/* Content images */
+.content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 0.5rem 0 2rem;
+}
+
+/* Post list */
+.post-list { margin-top: 3.5rem; }
+
+.post-list h2 {
+  font-size: 0.8rem;
+  font-family: "Literata", Georgia, serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.6rem;
+  margin-top: 0;
+}
+
+.post-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-list li {
+  padding: 1.05rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-list li:last-child { border-bottom: none; }
+
+.post-list a {
+  font-size: 1.15rem;
+  text-decoration: none;
+  text-decoration-color: transparent;
+}
+
+.post-list a:hover { text-decoration: underline; }
+
+.post-date {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.15rem;
+}
+
+.post-summary {
+  margin: 0.3rem 0 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* Article */
+.post-header { margin-bottom: 1.75rem; }
+.post-header h1 { margin-bottom: 0.4rem; }
+
+.post-meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.post-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.post-body blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1.1rem;
+  border-left: 3px solid var(--border);
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* Code */
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    "Liberation Mono", monospace;
+  font-size: 0.82em;
+  background: var(--code-bg);
+  padding: 0.15em 0.38em;
+  border-radius: 4px;
+}
+
+pre {
+  background: var(--code-bg);
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  line-height: 1.55;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 2rem 1.25rem 3rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.site-footer p { margin: 0; }
+
+.site-footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.site-footer a:hover { color: var(--accent); }
+
+.back-link {
+  margin-top: 3.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0;
+}
