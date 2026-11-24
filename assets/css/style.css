@@ -41,6 +41,19 @@ body {
 
 .site-title:hover { color: var(--accent); }
 
+.site-nav {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+}
+
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.site-nav a:hover { color: var(--accent); }
+
 .content {
   max-width: 40rem;
   margin: 0 auto;
